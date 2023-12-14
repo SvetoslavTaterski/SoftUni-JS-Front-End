@@ -53,7 +53,7 @@ function solve() {
 
         unorderedList.removeChild(currentLi);
         
-        addButton.addEventListener("click", addData);
+        addButton.disabled = false;
       });
 
       newEditButton.textContent = "edit";
@@ -92,7 +92,7 @@ function solve() {
 
         unorderedList.removeChild(currentLi);
 
-        addButton.addEventListener("click", addData);
+        addButton.disabled = false;
       })
 
       newOKButton.textContent = "ok";
@@ -106,7 +106,7 @@ function solve() {
       playerRound.value = "";
       playerScore.value = "";
 
-      addButton.removeEventListener("click", addData);
+      addButton.disabled = true;
     }
   }
 }
